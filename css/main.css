@@ -1,0 +1,167 @@
+body {
+	color: #fff;
+	background-image: url('../img/nami.png');
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif ;
+	padding: 0;
+	margin: 0;
+	background-color: #bbb;
+}
+
+/* nav elements */
+
+#nav_container {
+	color: #fff;
+	background-color: #d00000;
+	background-image: url('../img/nav.png');
+	height: 32px;
+}
+nav, footer {
+	margin: 0 auto;
+	width: 1024px;
+}
+#title {
+	float: left;
+}
+#flag {
+	margin: 4px 8px;
+	height: 24px;
+	width: 40px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#language_name {
+	display: inline-block;
+	opacity: 0.5;
+	vertical-align: top;
+	margin: 6px 0;
+	font-size: 16px;
+}
+nav ul {
+	margin: 6px 0;
+	float: right;
+}
+nav li {
+	text-align: center;
+	display: inline;
+}
+nav li+li:before
+{
+	margin: 0 8px;
+	content: '|';
+}
+nav a{
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+/* main elements */
+
+#container {
+	text-align: center;
+	margin: 0 auto;
+	padding: 24px 0;
+	background-color: #fff;
+	width: 1024px;
+	color: #000;
+	overflow: hidden;	
+}
+#container *{
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+#answer_list {
+	color: #fff;
+	float: left;
+}
+#answer_list ul{
+	margin: 0;
+	padding: 0;
+    list-style-type: none;
+}
+#answer_list li {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin: 8px;
+	padding: 8px;
+	width: 464px;
+}
+#play_button{
+	background-image: url("../img/play.png");
+	display: block;
+	font-size: 64px;
+	margin: 8px 80px;
+	width: 96px;
+	height: 96px;
+}
+#seekbar{
+	margin: 32px 80px;
+}
+#play_container {
+	float: left;
+}
+#score {
+	margin: 8px;
+	width: 256px;
+	font-size: 48px;
+	padding: 0;
+	float: left;
+}
+
+/* footer elements */
+
+footer {
+	height: 16px;
+	background-color: #a00;
+	vertical-align: top;
+	font-size: 12px;
+	text-align: center;
+	color: #ddd;
+}
+
+/* About page */
+h1 {
+	margin: 0px;
+	font-size: 48px;
+}
+.answer {
+	width: 768px;
+	font-size: 20px;
+	font-style: italic;
+	color: #222;
+	margin: 12px auto;
+}
+
+/* Gradients */
+
+.up_gradient {
+	background: rgb(208,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(208,0,0,1) 0%, rgba(160,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(208,0,0,1)), color-stop(100%,rgba(160,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(208,0,0,1) 0%,rgba(160,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(208,0,0,1) 0%,rgba(160,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(208,0,0,1) 0%,rgba(160,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(208,0,0,1) 0%,rgba(160,0,0,1) 100%); /* W3C */
+}
+.down_gradient {
+	background: rgb(160,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(160,0,0,1) 0%, rgba(208,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(160,0,0,1)), color-stop(100%,rgba(208,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(160,0,0,1) 0%,rgba(208,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(160,0,0,1) 0%,rgba(208,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(160,0,0,1) 0%,rgba(208,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(160,0,0,1) 0%,rgba(208,0,0,1) 100%); /* W3C */
+}
+.correct {
+	background: rgb(0,208,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,208,0,1) 0%, rgba(0,160,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,208,0,1)), color-stop(100%,rgba(0,160,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,208,0,1) 0%,rgba(0,160,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,208,0,1) 0%,rgba(0,160,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,208,0,1) 0%,rgba(0,160,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,208,0,1) 0%,rgba(0,160,0,1) 100%); /* W3C */
+}

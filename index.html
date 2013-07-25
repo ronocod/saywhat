@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SayWhat?</title>
+		<meta name="description" content="Test your language skills!">
+		<meta name="author" content="Conor O'Donnell">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="shortcut icon" href="favicon.ico" />
+	</head>
+	<body>
+		<div id="nav_container">
+			<nav>
+				<img id="title" src="img/title.png" alt="SayWhat?"/>
+				<img id="flag" src="img/flag_es.jpg" alt="Switch language"/>
+				<p id="language_name">
+					Switch to Spanish
+				</p>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="container">
+			<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+			<![endif]-->
+
+			<audio id="audioPlayer"></audio>
+			<div id = "play_container">
+				<div id="play_button"></div>
+				<canvas id="seekbar" width="96" height="15"></canvas>
+			</div>
+
+			<div id="answer_list">
+				<ul>
+					<li id="answer_0" class="up_gradient"></li>
+					<li id="answer_1" class="up_gradient"></li>
+					<li id="answer_2" class="up_gradient"></li>
+				</ul>
+			</div>
+
+			<p id="score">
+				Score: 0
+			</p>
+		</div>
+
+		<footer>
+			Copyright © Conor O'Donnell 2012
+		</footer>
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
